@@ -10,7 +10,8 @@ export default function Slider() {
         getSliders();
     }, [])
     
-    const getSliders = () => {
+    const getSliders = () => {   // this function is used to get the sliders from the API
+        // console.log("getSliders called")
         GlobalApi.getSlider().then(res => {
             // console.log("res", res?.sliders)
             setSlider(res?.sliders);
