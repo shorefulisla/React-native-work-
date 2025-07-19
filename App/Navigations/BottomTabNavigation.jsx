@@ -6,6 +6,7 @@ import { Text } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import Colors from "../Utils/Colors";
 import HomeNavigation from "./HomeNavigation";
+import ProfileNavigation from "./ProfileNavigation";
 
 const Tab = createBottomTabNavigator();
 
@@ -42,7 +43,7 @@ export default function BottomTabNavigation() {
       />
       <Tab.Screen
         name="profile"
-        component={ProfileScreen}
+        component={ProfileNavigation}
         options={{
           tabBarLabel: ({ color }) => (
             <Text style={{ color: color, fontSize: 12, marginTop: -7 }}>
